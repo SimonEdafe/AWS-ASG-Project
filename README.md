@@ -49,8 +49,7 @@ VPC (asg-project-vpc)
 - Configured 2 public subnets spread across 2 Availability Zones for high availability
 - AWS automatically provisioned route tables and an Internet Gateway
 
-![Image](images/1.VPC resource map showing subnets and internet gateway.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/1.VPC%20resource%20map%20showing%20subnets%20and%20internet%20gateway.png
 ---
 
 ### Step 2 — Configured a Security Group
@@ -58,8 +57,7 @@ VPC (asg-project-vpc)
 - Allowed HTTP (port 80) from anywhere so the web app is publicly accessible
 - Allowed SSH (port 22) from my IP only for secure instance access
 
-![Image](images/2.Security Groups.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/2.Security%20Groups.png
 ---
 
 ### Step 3 — Created a Launch Template
@@ -68,8 +66,7 @@ VPC (asg-project-vpc)
 - Added a User Data script to automatically install and start Apache HTTP Server 
   on every new instance, serving a custom webpage showing the instance hostname
 
-![Image](images/3. Created Lunch Template.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/3.%20Created%20Lunch%20Template.png
 ---
 
 ### Step 4 — Created a Target Group
@@ -77,7 +74,7 @@ VPC (asg-project-vpc)
 - Configured health checks on port 80 to ensure only healthy instances 
   receive traffic
 
-![Image](images/4. Created Target Groups.png)
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/4.%20Created%20Target%20Groups.png
 
 ---
 
@@ -86,8 +83,7 @@ VPC (asg-project-vpc)
 - Attached it to both public subnets across both Availability Zones
 - Configured a listener on port 80 to forward all traffic to the target group
 
-![Image](images/5. Load Balancer Active with DNS name.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/5.%20Load%20Balancer%20Active%20with%20DNS%20name.png
 
 ---
 
@@ -99,9 +95,9 @@ VPC (asg-project-vpc)
   — the ASG automatically adds instances when CPU exceeds 50% and 
   removes them when load drops
 
-![Image](images/6.1 ASG created with Desired Capacity.png)
-![Image](images/6.2. Scaling Policy.png)
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.1%20ASG%20created%20with%20Desired%20Capacity.png
 
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.2.%20Scaling%20Policy.png
 ---
 
 ### Step 7 — Verified Instances Launched Successfully
@@ -109,8 +105,7 @@ VPC (asg-project-vpc)
 - Checked the ASG Instance Management tab showing both instances 
   with "InService" health status
 
-![Image](images/7. Created ASG EC2 Instances.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/7.%20Created%20ASG%20EC2%20Instances.png
 ---
 
 ### Step 8 — Tested the Load Balancer
@@ -119,10 +114,9 @@ VPC (asg-project-vpc)
 - Used curl in terminal to confirm traffic was being distributed across 
   both instances
 
-![Image](images/8.1. Hello World.png)
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.1.%20Hello%20World.png
 
-![Image](images/8.2. Hello World2.png)
-
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.2.%20Hello%20World2.png
 ---
 
 ## What I Learned
@@ -149,4 +143,4 @@ in the following order:
 5. Security Group
 6. VPC
 
-![Image](images/Clean up.png)
+https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/Clean%20up.png
