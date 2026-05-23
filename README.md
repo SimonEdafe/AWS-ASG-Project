@@ -66,7 +66,7 @@ VPC (asg-project-vpc)
 - Added a User Data script to automatically install and start Apache HTTP Server 
   on every new instance, serving a custom webpage showing the instance hostname
 
-[image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/3.%20Created%20Lunch%20Template.png)
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/3.%20Created%20Lunch%20Template.png)
 ---
 
 ### Step 4 — Created a Target Group
@@ -74,7 +74,7 @@ VPC (asg-project-vpc)
 - Configured health checks on port 80 to ensure only healthy instances 
   receive traffic
 
-[image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/4.%20Created%20Target%20Groups.png)
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/4.%20Created%20Target%20Groups.png)
 
 ---
 
