@@ -49,7 +49,7 @@ VPC (asg-project-vpc)
 - Configured 2 public subnets spread across 2 Availability Zones for high availability
 - AWS automatically provisioned route tables and an Internet Gateway
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/1.VPC%20resource%20map%20showing%20subnets%20and%20internet%20gateway.png
+![Image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/1.VPC%20resource%20map%20showing%20subnets%20and%20internet%20gateway.png)
 ---
 
 ### Step 2 — Configured a Security Group
