@@ -57,7 +57,7 @@ VPC (asg-project-vpc)
 - Allowed HTTP (port 80) from anywhere so the web app is publicly accessible
 - Allowed SSH (port 22) from my IP only for secure instance access
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/2.Security%20Groups.png
+![Image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/2.Security%20Groups.png)
 ---
 
 ### Step 3 — Created a Launch Template
@@ -66,7 +66,7 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
 - Added a User Data script to automatically install and start Apache HTTP Server 
   on every new instance, serving a custom webpage showing the instance hostname
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/3.%20Created%20Lunch%20Template.png
+[image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/3.%20Created%20Lunch%20Template.png)
 ---
 
 ### Step 4 — Created a Target Group
@@ -74,7 +74,7 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
 - Configured health checks on port 80 to ensure only healthy instances 
   receive traffic
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/4.%20Created%20Target%20Groups.png
+[image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/4.%20Created%20Target%20Groups.png)
 
 ---
 
@@ -83,7 +83,7 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
 - Attached it to both public subnets across both Availability Zones
 - Configured a listener on port 80 to forward all traffic to the target group
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/5.%20Load%20Balancer%20Active%20with%20DNS%20name.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/5.%20Load%20Balancer%20Active%20with%20DNS%20name.png)
 
 ---
 
@@ -95,9 +95,9 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
   — the ASG automatically adds instances when CPU exceeds 50% and 
   removes them when load drops
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.1%20ASG%20created%20with%20Desired%20Capacity.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.1%20ASG%20created%20with%20Desired%20Capacity.png)
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.2.%20Scaling%20Policy.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/6.2.%20Scaling%20Policy.png)
 ---
 
 ### Step 7 — Verified Instances Launched Successfully
@@ -105,7 +105,7 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
 - Checked the ASG Instance Management tab showing both instances 
   with "InService" health status
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/7.%20Created%20ASG%20EC2%20Instances.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/7.%20Created%20ASG%20EC2%20Instances.png)
 ---
 
 ### Step 8 — Tested the Load Balancer
@@ -114,9 +114,9 @@ https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58ab
 - Used curl in terminal to confirm traffic was being distributed across 
   both instances
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.1.%20Hello%20World.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.1.%20Hello%20World.png)
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.2.%20Hello%20World2.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/8.2.%20Hello%20World2.png)
 ---
 
 ## What I Learned
@@ -143,4 +143,4 @@ in the following order:
 5. Security Group
 6. VPC
 
-https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/Clean%20up.png
+![image](https://github.com/SimonEdafe/AWS-ASG-Project/blob/c821639c14f9f8a8ba11d763f58aba8f3aa1a415/images/Clean%20up.png)
